@@ -361,6 +361,8 @@ If you want to retrieve the cart from the database and restore it, all you have 
     
     // To restore a cart instance named 'wishlist'
     Cart::instance('wishlist')->restore('username');
+    // the restore method deletes the row from database by default if you won't it do that you can use it like this 
+    Cart::instance('wishlist')->restore('username', false);
 
 ## Exceptions
 
